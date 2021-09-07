@@ -113,3 +113,27 @@ logn query
   
 ![image](https://user-images.githubusercontent.com/89128563/132125746-9884e00c-1b83-4830-bc04-415a6ec0843f.png)
 
+
+## Digit-DP
+- another type of dp
+- problem type 1: find out the count of integers x such that  0<=x<=R which obey the functinon f(x)
+- problem type 2: how many no x are ther in the range [L,R] inclusive which obey the funciton f(x) wher f(x) is binary fucntin .
+-brute force: iterate form l to r and check f(x) wheather f(x) is true or not 
+-tc:o((r-l)*T) r=1e9 or r=1e18 or r=1e1000
+-we can not solve such problem by iterating to all no. here comes digit dp
+
+
+sol-problem-1:
+- S(R)-count of no in the range [L,R] which obey the function F(x).
+![image](https://user-images.githubusercontent.com/89128563/132180889-e6bdd415-3074-4926-b6f8-731143cd7a13.png)
+- if we able to find S(R) then we can find S(L-1) then S(L,R)=S(R)-S(L-1)
+![image](https://user-images.githubusercontent.com/89128563/132181193-4e823fdf-a72f-49b3-9a38-c0f04cc23343.png)
+- brute force: iterate 
+![image](https://user-images.githubusercontent.com/89128563/132181462-52632c7c-8c7c-4728-a5b8-536e44cdba85.png)
+![image](https://user-images.githubusercontent.com/89128563/132181555-b65ff0a2-ed7b-4495-96a0-91528b49bb2f.png)
+- 
+
+
+
+
+
